@@ -1,5 +1,7 @@
 {
   "packages": [
+    "router-host",
+    "router-remote",
     "home",
     "common-lib",
     "layout",
