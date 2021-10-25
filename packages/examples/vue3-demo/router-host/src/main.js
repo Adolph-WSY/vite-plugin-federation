@@ -1,6 +1,8 @@
 import {createApp, defineAsyncComponent} from "vue";
 import store from "./store.js"
 import App from './App.vue'
+// [dev mode] Uncaught (in promise) TypeError: Failed to fetch dynamically imported module: http://localhost:5104/node_modules/.vite/element-plus.js?v=525b4a31
+import "element-plus";
 
 // dev mode 防止 vite 去除 element-plus 的依赖，remote 无法找打 host's element-plus
 // Uncaught ReferenceError: VueRouter is opnot defined

@@ -15,6 +15,9 @@ export default defineConfig({
             shared: ["vue", "element-plus"]
         })
     ],
+    optimizeDeps:{
+        include: ["element-plus"]
+    },
     // 解决 const Home = {template: '<p>Home</p>'} 类组件无法在 vue-router 中显示的问题
     resolve:{
         alias:{
