@@ -139,7 +139,9 @@ export function sharedPlugin(
       }
       if (provideShared.length && isRemote) {
         this.emitFile({
-          fileName: '__rf_fn__import.js',
+          fileName: `${
+            builderInfo.assetsDir ? builderInfo.assetsDir + '/' : ''
+          }__rf_fn__import.js`,
           type: 'chunk',
           id: '__rf_fn__import',
           preserveSignature: 'strict'
